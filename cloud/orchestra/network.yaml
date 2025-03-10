@@ -1,0 +1,17 @@
+inter_cloud_network:
+  vpcs:
+    - name: "aws-to-gcp"
+      source_cloud: "aws"
+      target_cloud: "gcp"
+      cidr_block: "192.168.100.0/24"
+    - name: "gcp-to-azure"
+      source_cloud: "gcp"
+      target_cloud: "azure"
+      cidr_block: "192.168.200.0/24"
+  peering:
+    - name: "aws-gcp-peer"
+      source_vpc: "aws-main-vpc"
+      target_vpc: "gcp-main-vpc"
+    - name: "gcp-azure-peer"
+      source_vpc: "gcp-main-vpc"
+      target_vpc: "azure-main-vnet"

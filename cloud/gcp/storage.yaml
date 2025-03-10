@@ -1,0 +1,4 @@
+gcp_storage:
+  - name: "gcp-bachir-1986"
+    location: "US"
+    storage_class: "STANDARD"

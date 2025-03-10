@@ -1,0 +1,18 @@
+harmony:
+  execution_order:
+    - "aws_network"
+    - "gcp_network"
+    - "azure_network"
+    - "inter_cloud_network"
+  dependencies:
+    aws_network: []
+    gcp_network: ["aws_network"]
+    azure_network: ["gcp_network"]
+    inter_cloud_network: ["aws_network", "gcp_network", "azure_network"]
+  interconnect:
+    - source_cloud: "aws"
+      target_cloud: "gcp"
+      type: "vpc_peering"
+    - source_cloud: "gcp"
+      target_cloud: "azure"
+      type: "network_peering"

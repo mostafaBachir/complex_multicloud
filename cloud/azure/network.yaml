@@ -1,0 +1,10 @@
+azure_network:
+  location: "East US"
+  resource_group_name: "BachirRg"
+  vnet_name: "azure-main-vnet"
+  address_space: ["10.2.0.0/16"]
+  subnets:
+    - name: "azure-subnet-1"
+      address_prefix: "10.2.1.0/24"
+    - name: "azure-subnet-2"
+      address_prefix: "10.2.2.0/24"

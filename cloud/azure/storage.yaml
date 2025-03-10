@@ -1,0 +1,6 @@
+azure_storage:
+  - name: "storagebachir1986"
+    resource_group_name: "BachirRg"
+    region: "eastus"
+    account_tier: "Standard"
+    replication: "LRS"

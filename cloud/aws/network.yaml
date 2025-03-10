@@ -1,0 +1,10 @@
+aws_network:
+  vpc_name: "aws-main-vpc"
+  cidr_block: "10.0.0.0/16"
+  subnets:
+    - name: "aws-subnet-1"
+      cidr_block: "10.0.1.0/24"
+      availability_zone: "us-east-1a"
+    - name: "aws-subnet-2"
+      cidr_block: "10.0.2.0/24"
+      availability_zone: "us-east-1b"

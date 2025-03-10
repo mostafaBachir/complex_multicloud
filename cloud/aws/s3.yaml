@@ -1,0 +1,5 @@
+aws_s3:
+  - name: "bachir-super-bucket-2025"
+    storage_class: "STANDARD"
+  - name: "bachir-super-bucket-1986"
+    storage_class: "STANDARD"

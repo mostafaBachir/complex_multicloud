@@ -1,0 +1,6 @@
+gcp_compute:
+  - name: "gcp-bachir-instance-1986"
+    type: "e2-micro"
+    region: "us-central1"
+    zone: "us-central1-a"
+    os_image: "debian-cloud/debian-11"

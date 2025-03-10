@@ -1,0 +1,9 @@
+gcp_network:
+  network_name: "gcp-main-vpc"
+  subnets:
+    - name: "gcp-subnet-1"
+      region: "us-east1"
+      ip_cidr_range: "10.1.1.0/24"
+    - name: "gcp-subnet-2"
+      region: "us-east1"
+      ip_cidr_range: "10.1.2.0/24"

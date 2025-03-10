@@ -1,0 +1,9 @@
+azure_vm:
+  - name: "azure-vm-1"
+    size: "Standard_B1s"
+    region: "East US"
+    subnet: "azure-subnet-1" 
+  - name: "azure-vm-2"
+    size: "Standard_B2s"
+    region: "East US"
+    subnet: "azure-subnet-2"  
